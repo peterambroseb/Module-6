@@ -35,10 +35,39 @@ To write a Python program to define the abstract base class named `Polygon` and 
 
 ```
 
+from abc import ABC  
+class Polygon(ABC):   
+    def sides(self):   
+      pass  
+class Triangle(Polygon):   
+   def sides(self):   
+      print("Triangle has 3 sides")   
+  
+class Pentagon(Polygon):   
+    def sides(self):
+        print("Pentagon has 5 sides")
+class Hexagon(Polygon):   
+    def sides(self):
+        print("Hexagon has 6 sides")
+class square(Polygon):   
+   def sides(self):   
+      print("I have 4 sides")   
+t = Triangle()   
+t.sides() 
+s = square()   
+s.sides()
+p = Pentagon()   
+p.sides()
+k = Hexagon()   
+k.sides()
+Feedback
+
 
 ```
 
 ### OUTPUT
 
+![image](https://github.com/user-attachments/assets/c8b32426-0d5e-434e-9fc1-458e8d41750b)
 
 ### RESULT
+Thus a Python program to define the abstract base class named `Polygon` and also define the abstract method. This base class is inherited by various subclasses was successfully implemented and executed.
