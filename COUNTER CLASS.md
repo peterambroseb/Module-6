@@ -1,10 +1,10 @@
 # Exp.No:30  
-##  Polymorphism
+## COUNTER CLASS
 
 ---
 
 ### AIM  
-To write a Python program to create two classes Employee and Admin. These two different classes have the same method name info()
+To write a Python program to create a `Counter` class that can increment the value of a counter.
 
 ---
 
@@ -26,19 +26,35 @@ To write a Python program to create two classes Employee and Admin. These two di
 ### PROGRAM
 
 ```
-class Employee:
-    def info(self):
-        print("Rooney from Electronics")
-class Admin:
-    def info(self):
-        print("Kalesh from CS")
-obj1= Employee()
-obj2 = Admin()
-obj1.info()
-obj2.info()
+class Counter:
+    def __init__(self):
+        self.current = 0
+
+    def increment(self):
+        self.current += 1
+
+    def value(self):
+        return self.current
+
+    def reset(self):
+        self.current = 0
+
+counter = Counter()
+
+
+counter.increment()
+counter.increment()
+counter.increment()
+
+print(counter.value())
+
 ```
 
 ### OUTPUT
-![image](https://github.com/user-attachments/assets/df48b543-2f3e-4519-aba9-8e2fe3bebc7d)
+![image](https://github.com/user-attachments/assets/92287997-5f39-4d7d-8ba2-a86d0b3cfeeb)
+
+
 
 ### RESULT
+Thus the python program to create a Counter class that can increment the value of a counter has been implemented successfully.
+
